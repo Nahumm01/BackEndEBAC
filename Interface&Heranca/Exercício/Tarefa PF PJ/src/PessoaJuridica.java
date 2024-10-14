@@ -28,13 +28,10 @@ public class PessoaJuridica extends Pessoa{
 	}
 
 	public PessoaJuridica(String nome, String cnpj, String razaoSocial, String nomeFantasia, String email, String telefone, String endereco) {
+		super(nome,endereco,email,telefone);
 		this.cnpj = cnpj;
-		this.setNome(nome);
 		this.nomeFantasia = nomeFantasia;
 		this.razaoSocial = razaoSocial;
-		this.setEmail(email);
-		this.setTelefone(telefone);
-		this.setEndereco(endereco);
 	}
 
 	@Override
