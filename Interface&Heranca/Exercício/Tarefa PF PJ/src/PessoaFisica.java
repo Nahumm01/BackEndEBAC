@@ -19,12 +19,9 @@ public class PessoaFisica extends Pessoa {
 	}
 
 	public PessoaFisica(String nome, String cpf, String dataNascimento, String email, String telefone, String endereco) {
-		this.setNome(nome);
+		super(nome,endereco,email,telefone);
 		this.cpf = cpf;
 		this.dataNascimento = dataNascimento;
-		this.setEmail(email);
-		this.setTelefone(telefone);
-		this.setEndereco(endereco);
 	}
 
 	@Override
