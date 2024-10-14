@@ -7,7 +7,16 @@ public class App {
 		banco.setCodigo(243L);
 
 		ContaCorrente cc = criarContaCorrente(12.000F,24.000F,banco,56150);
+		ContaCorrente cc2 = criarContaCorrente(12.000F,24.000F,banco,56150);
+		ContaCorrente cc3 = criarContaCorrente(12.000F,24.000F,banco,56150);
+		ContaCorrente cc4 = criarContaCorrente(12.000F,24.000F,banco,56150);
 
+		banco.addContaCorrente(cc);
+		banco.addContaCorrente(cc2);
+		banco.addContaCorrente(cc3);
+		banco.addContaCorrente(cc4);
+
+		banco.printContas(cc);
 
 	}
 
