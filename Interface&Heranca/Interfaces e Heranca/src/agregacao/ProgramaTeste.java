@@ -9,14 +9,21 @@ public class ProgramaTeste {
 
 		Comprador comprador1 = criarComprador("Pedro",5000d);
 
-		Venda venda1 = new Venda();
-		venda1.setVendedor(vendedorThiago);
-		venda1.add(produtoCel);
-		venda1.add(produtoTV);
-		venda1.setComprador(comprador1);
+		Venda venda = new Venda();
+		venda.setVendedor(vendedorThiago);
+		venda.setComprador(comprador1);
+		venda.add(produtoCel);
+		venda.add(produtoTV);
+		venda.concretizaVenda();
+		System.out.println(venda);
+		venda.cancelarVenda();
+
+		venda = null;
+		System.out.println(venda);
+		System.out.println(produtoTV.getNomeProduto());
 
 
-		venda1.concretizaVenda();
+
 
 	}
 
