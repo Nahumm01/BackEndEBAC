@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/Collections/Collections/Collections.iml" filepath="$PROJECT_DIR$/Collections/Collections/Collections.iml" />
+      <module fileurl="file://$PROJECT_DIR$/CollectionsII/Collections-II/CollectionsPT-II/CollectionsPT-II.iml" filepath="$PROJECT_DIR$/CollectionsII/Collections-II/CollectionsPT-II/CollectionsPT-II.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ControleFluxo/Controle de Fluxo/Controle de Fluxo.iml" filepath="$PROJECT_DIR$/ControleFluxo/Controle de Fluxo/Controle de Fluxo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/EBAC - BackEnd.iml" filepath="$PROJECT_DIR$/.idea/EBAC - BackEnd.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Classes&amp;Metodos/Exemplos - Classes/Exemplos - Classes.iml" filepath="$PROJECT_DIR$/Classes&amp;Metodos/Exemplos - Classes/Exemplos - Classes.iml" />
+      <module fileurl="file://$PROJECT_DIR$/CollectionsII/Collections-II/Exercício/Exercício.iml" filepath="$PROJECT_DIR$/CollectionsII/Collections-II/Exercício/Exercício.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Collections/Collections/Exercício/Exercício2.iml" filepath="$PROJECT_DIR$/Collections/Collections/Exercício/Exercício2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ControleFluxo/Tarefa Controle de Fluxo/Tarefa Controle de Fluxo.iml" filepath="$PROJECT_DIR$/ControleFluxo/Tarefa Controle de Fluxo/Tarefa Controle de Fluxo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/VariaveisWrapper/Tarefa Wrapper/Tarefa Wrapper.iml" filepath="$PROJECT_DIR$/VariaveisWrapper/Tarefa Wrapper/Tarefa Wrapper.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Variaveis&amp;Operadores/Tarefa_CalculoMedio/Tarefa_CalculoMedio.iml" filepath="$PROJECT_DIR$/Variaveis&amp;Operadores/Tarefa_CalculoMedio/Tarefa_CalculoMedio.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Classes&amp;Metodos/Tarefa_Classes/Tarefa_Classes.iml" filepath="$PROJECT_DIR$/Classes&amp;Metodos/Tarefa_Classes/Tarefa_Classes.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Variaveis&amp;Operadores/Variaveis/Variaveis.iml" filepath="$PROJECT_DIR$/Variaveis&amp;Operadores/Variaveis/Variaveis.iml" />
+      <module fileurl="file://$PROJECT_DIR$/VariaveisWrapper/Variaveis Complexas/Variaveis Complexas.iml" filepath="$PROJECT_DIR$/VariaveisWrapper/Variaveis Complexas/Variaveis Complexas.iml" />
+    </modules>
+  </component>
+</project>
