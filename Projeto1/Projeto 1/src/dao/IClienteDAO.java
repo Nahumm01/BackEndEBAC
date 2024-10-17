@@ -6,13 +6,14 @@ import java.util.Collection;
 
 public interface IClienteDAO {
 
-	public boolean inserirCliente(Cliente cliente);
+	 boolean inserirCliente(Cliente cliente);
 
-	public void alterarCliente(Cliente cliente);
+	 void alterarCliente(Cliente cliente);
 
-	public boolean excluirCliente(Long cpf);
+	 boolean excluirCliente(Long cpf);
 
-	public Cliente buscarCliente(Long cpf);
+	 Cliente buscarCliente(Long cpf);
 
-	public Collection<Cliente> listarCliente();
+	 Collection<Cliente> listarCliente();
+
 }
