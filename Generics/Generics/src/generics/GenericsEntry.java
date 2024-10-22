@@ -1,3 +1,5 @@
+package generics;
+
 public class GenericsEntry <T,E>{
 	private T data;
 	private E codigo;

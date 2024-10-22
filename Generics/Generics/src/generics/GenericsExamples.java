@@ -1,10 +1,11 @@
+package generics;
+
 import fruta.Banana;
 import fruta.IFruta;
 import fruta.Maca;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Objects;
 
 public class GenericsExamples {
 	public static void main(String[] args) {

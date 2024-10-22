@@ -1,3 +1,5 @@
+package generics;
+
 public class GenericsEntryExample {
 	public static void main(String[] args) {
 		GenericsEntry<String, Long> entry = new GenericsEntry<>("teste",1L);
