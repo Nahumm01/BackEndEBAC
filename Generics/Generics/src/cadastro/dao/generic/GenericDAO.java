@@ -10,20 +10,29 @@ import java.util.List;
 import java.util.Map;
 
 public abstract class GenericDAO<T extends Persistente>  implements IGenericDAO<T>{
-	private Map<Class,Map<Long,T>> map;
+	protected Map<Class,Map<Long,T>> map;
 
 
 	public abstract Class<T> getTipoClass();
 
 	public GenericDAO(){
 		this.map = new HashMap<>();
+		Map<Long, T> mapaInterno = this.map.getClass();
+		if (map == null){
+			mapaInterno = new HashMap<>();
+			this.map.put(getTipoClass(), mapaInterno);
+		}
 	}
 
 	@Override
 	public Boolean cadastrarProduto(T entity) {
-		Map<Long,T> mapaInterno = this.map.get(getTipoClass());
-		return null;
-	}
+		Map<Long, T> mapaInterno = this.map.get(getTipoClass());
+		if (mapaInterno.containsKey(entity.getCodigo())){
+			return false;
+		}
+		mapaInterno.put(entity.getCodigo(),entity);
+		return true;
+	};
 
 	@Override
 	public void excluirProduto(Long valor) {

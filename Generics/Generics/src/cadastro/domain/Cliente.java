@@ -97,4 +97,9 @@ public class Cliente implements Persistente  {
 				", cpf=" + cpf +
 				'}';
 	}
+
+	@Override
+	public Long getCodigo() {
+		return this.cpf;
+	}
 }
