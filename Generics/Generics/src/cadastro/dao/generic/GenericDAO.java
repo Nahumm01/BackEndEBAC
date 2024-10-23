@@ -1,5 +1,6 @@
 package cadastro.dao.generic;
 
+import cadastro.domain.Cliente;
 import cadastro.domain.Persistente;
 import cadastro.domain.Produto;
 
@@ -11,13 +12,16 @@ import java.util.Map;
 public abstract class GenericDAO<T extends Persistente>  implements IGenericDAO<T>{
 	private Map<Class,Map<Long,T>> map;
 
+
+	public abstract Class<T> getTipoClass();
+
 	public GenericDAO(){
 		this.map = new HashMap<>();
 	}
 
 	@Override
 	public Boolean cadastrarProduto(T entity) {
-		this.map.get()
+		Map<Long,T> mapaInterno = this.map.get(getTipoClass());
 		return null;
 	}
 
