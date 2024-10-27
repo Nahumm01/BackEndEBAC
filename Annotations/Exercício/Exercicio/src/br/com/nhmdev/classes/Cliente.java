@@ -1,4 +1,4 @@
-package br.com.nhmdev;
+package br.com.nhmdev.classes;
 
 public class Cliente {
 	public String clienteID;

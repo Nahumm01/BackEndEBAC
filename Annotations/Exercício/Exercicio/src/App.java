@@ -1,5 +1,5 @@
-import br.com.nhmdev.Cliente;
-import br.com.nhmdev.TabelaCliente;
+import br.com.nhmdev.classes.Cliente;
+import br.com.nhmdev.classes.TabelaCliente;
 
 public class App {
 	public static void main(String[] args) {

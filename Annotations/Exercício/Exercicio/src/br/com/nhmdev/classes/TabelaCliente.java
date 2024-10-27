@@ -1,4 +1,4 @@
-package br.com.nhmdev;
+package br.com.nhmdev.classes;
 
 import br.com.nhmdev.annotations.Tabela;
 import br.com.nhmdev.exceptions.ClienteExistenteException;
