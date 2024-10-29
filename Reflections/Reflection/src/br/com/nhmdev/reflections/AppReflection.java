@@ -45,7 +45,6 @@ public class AppReflection {
 							System.out.println(m.invoke(prod1, 2d));
 						}
 					}
-
 				}
 			}
 		} catch (InvocationTargetException | IllegalAccessException | NoSuchMethodException | InstantiationException e) {
