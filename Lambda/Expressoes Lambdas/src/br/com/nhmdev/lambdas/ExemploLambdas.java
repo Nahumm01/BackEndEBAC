@@ -1,6 +1,7 @@
 package br.com.nhmdev.lambdas;
 
 import java.util.function.BiFunction;
+import java.util.function.Consumer;
 import java.util.function.IntBinaryOperator;
 
 public class ExemploLambdas {
@@ -32,9 +33,16 @@ public class ExemploLambdas {
 
 		//Simplificando ainda mais
 		calcular(1L,2L,Long::sum);
+
+		Runnable runnable = () -> System.out.println("Hello World!");
+
+		Consumer<String> stringConsumer = (String s) -> System.out.println(s);
+
+
 	}
 
-	private static Long calcular(Long t, Long u, BiFunction<Long,Long,Long> function){
+
+	private static Long calcular(Long t, Long u, @org.jetbrains.annotations.NotNull BiFunction<Long,Long,Long> function){
 		return function.apply(t,u);
 	}
 
