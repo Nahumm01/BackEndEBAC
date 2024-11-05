@@ -20,6 +20,13 @@ public class Pessoa {
 
 	}
 
+	public Pessoa (Pessoa pessoa) {
+		this.id = pessoa.getId();
+        this.nome = pessoa.getNome();
+        this.nacionalidade = pessoa.getNacionalidade();
+        this.idade = pessoa.getIdade();
+	}
+
 	public String getId() {
 		return id;
 	}
