@@ -1,4 +1,4 @@
-package br.com.nhmdev;
+package br.com.nhmdev.intermediarios;
 
 import java.util.List;
 import java.util.Map;

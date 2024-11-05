@@ -1,4 +1,6 @@
-package br.com.nhmdev;
+package br.com.nhmdev.intermediarios;
+
+import br.com.nhmdev.Pessoa;
 
 import java.util.List;
 import java.util.stream.IntStream;
