@@ -7,10 +7,10 @@ import java.util.stream.Collectors;
 
 public class App {
 	public static void main(String[] args) {
-		sortByName();
+		sortByGender();
 	}
 
-	private static void sortByName() {
+	private static void sortByGender() {
 		Scanner sc = new Scanner(System.in);
 
 		System.out.println("Digite os nomes e gêneros(M/F) separados por hífen(-) ");
