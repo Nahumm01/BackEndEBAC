@@ -1,4 +1,4 @@
-package br.com.nhmdev.tests;
+package br.com.nhmdev;
 
 import org.junit.runner.RunWith;
 import org.junit.runners.Suite;

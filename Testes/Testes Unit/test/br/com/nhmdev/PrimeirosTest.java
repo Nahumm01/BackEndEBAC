@@ -1,4 +1,4 @@
-package br.com.nhmdev.tests;
+package br.com.nhmdev;
 
 import org.junit.Assert;
 import org.junit.Test;
