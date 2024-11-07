@@ -9,7 +9,6 @@ public class ClienteService {
 		clienteDAO = new ClienteDAO();
 	}
 
-
 	public String salvar(){
 		clienteDAO.salvar();
 		return "Cliente salvo com sucesso!";
