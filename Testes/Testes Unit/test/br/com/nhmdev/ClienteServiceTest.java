@@ -1,7 +1,7 @@
 package br.com.nhmdev;
 
 import br.com.nhmdev.dao.ClienteDAO;
-import br.com.nhmdev.dao.ClienteDAOMock;
+import br.com.nhmdev.mock.ClienteDAOMock;
 import br.com.nhmdev.interfaces.IClienteDAO;
 import br.com.nhmdev.service.ClienteService;
 import org.junit.Assert;
