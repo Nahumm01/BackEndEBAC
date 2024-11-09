@@ -1,12 +1,13 @@
 package br.com.nhmdev.service;
 
 import br.com.nhmdev.dao.ClienteDAO;
+import br.com.nhmdev.interfaces.IClienteDAO;
 
 public class ClienteService {
-	private ClienteDAO clienteDAO;
+	private IClienteDAO clienteDAO;
 
-	public ClienteService() {
-		clienteDAO = new ClienteDAO();
+	public ClienteService(IClienteDAO clienteDAO) {
+		this.clienteDAO = clienteDAO;
 	}
 
 	public String salvar(){
