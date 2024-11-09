@@ -13,24 +13,24 @@ public class ContratoService implements IContratoDAO {
 	@Override
 	public String salvarContrato() {
 		contratoDAO.salvarContrato();
-		return "Sucesso";
+		return "Contrato salvo com sucesso!";
 	}
 
 	@Override
 	public String listarContratos() {
 		contratoDAO.listarContratos();
-		return "Sucesso";
+		return "200 OK";
 	}
 
 	@Override
 	public String excluirContrato() {
 		contratoDAO.excluirContrato();
-		return "Sucesso";
+		return "Contrato excluído.";
 	}
 
 	@Override
 	public String atualizarContrato() {
 		contratoDAO.atualizarContrato();
-		return "Sucesso";
+		return "200 OK";
 	}
 }
