@@ -1,9 +1,9 @@
 package br.com.nhmdev.domain;
 
-public class Cliente {
+public class Cliente implements Persistente {
 	String nome;
-	String cpf;
-	Integer id;
+	Long cpf;
+	Long id;
 	String cidade;
 	String estado;
 	String endereco;
@@ -18,19 +18,19 @@ public class Cliente {
 		this.nome = nome;
 	}
 
-	public String getCpf() {
+	public Long getCpf() {
 		return cpf;
 	}
 
-	public void setCpf(String cpf) {
+	public void setCpf(Long cpf) {
 		this.cpf = cpf;
 	}
 
-	public Integer getId() {
+	public Long getId() {
 		return id;
 	}
 
-	public void setId(Integer id) {
+	public void setId(Long id) {
 		this.id = id;
 	}
 

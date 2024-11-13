@@ -1,27 +1,19 @@
 package br.com.nhmdev.dao;
 
 import br.com.nhmdev.domain.Cliente;
+import br.com.nhmdev.generics.GenericDAO;
 import br.com.nhmdev.interfaces.IClienteDAO;
 
-public class ClienteDAO implements IClienteDAO {
+public class ClienteDAO extends GenericDAO<Cliente> implements IClienteDAO {
+
 
 	@Override
-	public Boolean salvar(Cliente cliente) {
-		return true;
+	public Class<Cliente> getTipoClasse() {
+		return Cliente.class;
 	}
 
 	@Override
-	public Boolean excluir(Integer id) {
-	    return true;
-	}
+	public void atualizarDados(Cliente entity, Cliente entityCadastrado) {
 
-	@Override
-	public Cliente alterar(Cliente cliente) {
-		return null;
-	}
-
-	@Override
-	public Cliente pesquisarPorCpf(String cpf) {
-		return null;
 	}
 }

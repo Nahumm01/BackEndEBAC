@@ -1,8 +1,12 @@
 package br.com.nhmdev.services;
 
 import br.com.nhmdev.domain.Cliente;
+import br.com.nhmdev.exceptions.TipoChaveNaoEncontradaException;
 import br.com.nhmdev.interfaces.IClienteDAO;
 import br.com.nhmdev.interfaces.IClienteService;
+
+import java.util.Collection;
+import java.util.List;
 
 public class ClienteService implements IClienteService {
 	IClienteDAO clienteDAO;
@@ -11,24 +15,29 @@ public class ClienteService implements IClienteService {
         this.clienteDAO = clienteDAO;
     }
 
-	@Override
-	public Boolean salvar(Cliente cliente) {
-		clienteDAO.salvar(cliente);
-        return true;
+
+    @Override
+    public Boolean cadastrar(Cliente cliente) throws TipoChaveNaoEncontradaException {
+        return clienteDAO.cadastrar(cliente);
     }
 
-	@Override
-	public void excluir(Integer id) {
-	    clienteDAO.excluir(id);
-	}
+    @Override
+    public Boolean excluir(Long cpf) {
+        return clienteDAO.excluir(cpf);
+    }
 
-	@Override
-	public Cliente alterar(Cliente cliente) {
-		return clienteDAO.alterar(cliente);
-	}
+    @Override
+    public void alterar(Cliente cliente) throws TipoChaveNaoEncontradaException {
+        clienteDAO.alterar(cliente);
+    }
 
-	@Override
-	public Cliente pesquisarPorCpf(String cpf) {
-		return clienteDAO.pesquisarPorCpf(cpf);
-	};
+    @Override
+    public Cliente consultar(Long cpf) {
+         return clienteDAO.consultar(cpf);
+    }
+
+    @Override
+    public Collection<Cliente> buscarTodos() {
+        return List.of();
+    }
 }
