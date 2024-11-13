@@ -3,8 +3,8 @@ package br.com.nhmdev.interfaces;
 import br.com.nhmdev.domain.Cliente;
 
 public interface IClienteDAO {
-	void salvar(Cliente cliente);
-	void excluir(Long cpf);
+	Boolean salvar(Cliente cliente);
+	Boolean excluir(Integer id);
 	Cliente alterar(Cliente cliente);
 	Cliente pesquisarPorCpf(String cpf);
 }

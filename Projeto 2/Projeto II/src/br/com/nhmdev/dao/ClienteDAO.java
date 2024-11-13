@@ -6,13 +6,13 @@ import br.com.nhmdev.interfaces.IClienteDAO;
 public class ClienteDAO implements IClienteDAO {
 
 	@Override
-	public void salvar(Cliente cliente) {
-
+	public Boolean salvar(Cliente cliente) {
+		return true;
 	}
 
 	@Override
-	public void excluir(Long cpf) {
-
+	public Boolean excluir(Integer id) {
+	    return true;
 	}
 
 	@Override
