@@ -1,4 +1,4 @@
-package br.com.nhmdev;
+package br.com.nhmdev.dao.generic;
 
 import java.util.HashMap;
 import java.util.Map;

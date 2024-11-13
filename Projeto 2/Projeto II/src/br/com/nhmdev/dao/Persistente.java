@@ -1,4 +1,4 @@
-package br.com.nhmdev.domain;
+package br.com.nhmdev.dao;
 
 
 

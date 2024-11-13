@@ -1,8 +1,7 @@
 package br.com.nhmdev.dao;
 
 import br.com.nhmdev.domain.Cliente;
-import br.com.nhmdev.generics.GenericDAO;
-import br.com.nhmdev.interfaces.IClienteDAO;
+import br.com.nhmdev.dao.generic.GenericDAO;
 
 public class ClienteDAO extends GenericDAO<Cliente> implements IClienteDAO {
 

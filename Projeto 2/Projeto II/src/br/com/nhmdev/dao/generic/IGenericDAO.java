@@ -1,6 +1,6 @@
-package br.com.nhmdev.generics;
+package br.com.nhmdev.dao.generic;
 
-import br.com.nhmdev.domain.Persistente;
+import br.com.nhmdev.dao.Persistente;
 import br.com.nhmdev.exceptions.TipoChaveNaoEncontradaException;
 
 import java.util.Collection;

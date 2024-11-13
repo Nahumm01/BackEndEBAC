@@ -2,8 +2,7 @@ package br.com.nhmdev.services;
 
 import br.com.nhmdev.domain.Cliente;
 import br.com.nhmdev.exceptions.TipoChaveNaoEncontradaException;
-import br.com.nhmdev.interfaces.IClienteDAO;
-import br.com.nhmdev.interfaces.IClienteService;
+import br.com.nhmdev.dao.IClienteDAO;
 
 import java.util.Collection;
 import java.util.List;

@@ -1,7 +1,7 @@
-package br.com.nhmdev.domain;
+package br.com.nhmdev.dao;
 
+import br.com.nhmdev.domain.Cliente;
 import br.com.nhmdev.exceptions.TipoChaveNaoEncontradaException;
-import br.com.nhmdev.interfaces.IClienteDAO;
 
 import java.util.Collection;
 import java.util.List;

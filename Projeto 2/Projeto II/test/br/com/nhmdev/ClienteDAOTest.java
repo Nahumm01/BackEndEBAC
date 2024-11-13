@@ -1,9 +1,9 @@
 package br.com.nhmdev;
 
 import br.com.nhmdev.domain.Cliente;
-import br.com.nhmdev.domain.ClienteDAOMock;
+import br.com.nhmdev.dao.ClienteDAOMock;
 import br.com.nhmdev.exceptions.TipoChaveNaoEncontradaException;
-import br.com.nhmdev.interfaces.IClienteDAO;
+import br.com.nhmdev.dao.IClienteDAO;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;

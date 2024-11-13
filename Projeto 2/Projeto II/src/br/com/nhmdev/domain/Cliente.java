@@ -1,5 +1,7 @@
 package br.com.nhmdev.domain;
 
+import br.com.nhmdev.dao.Persistente;
+
 public class Cliente implements Persistente {
 	String nome;
 	Long cpf;
