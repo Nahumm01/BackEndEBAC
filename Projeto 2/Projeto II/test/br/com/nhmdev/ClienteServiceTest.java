@@ -1,7 +1,7 @@
 package br.com.nhmdev;
 
 import br.com.nhmdev.domain.Cliente;
-import br.com.nhmdev.dao.ClienteDAOMock;
+import br.com.nhmdev.mock.ClienteDAOMock;
 import br.com.nhmdev.exceptions.TipoChaveNaoEncontradaException;
 import br.com.nhmdev.dao.IClienteDAO;
 import br.com.nhmdev.services.IClienteService;
@@ -33,8 +33,7 @@ public class ClienteServiceTest {
 	}
 	@Test
 	public void pesquisarCliente(){
-		Cliente clienteEncontrado = (Cliente) clienteService.consultar(cliente.getCpf());
-		System.out.println("Cliente encontrado: " + clienteEncontrado);
+		Cliente clienteEncontrado = clienteService.buscarPorCPF(cliente.getCpf());
 		Assert.assertNotNull(clienteEncontrado);
 	}
 
@@ -46,8 +45,7 @@ public class ClienteServiceTest {
 
 	@Test
 	public void excluirCliente(){
-		Boolean retorno = clienteService.excluir(cliente.getId());
-		Assert.assertTrue(retorno);
+		clienteService.excluir(cliente.getId());
 	}
 
 	@Test

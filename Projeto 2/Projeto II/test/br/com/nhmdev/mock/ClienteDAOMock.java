@@ -1,5 +1,6 @@
-package br.com.nhmdev.dao;
+package br.com.nhmdev.mock;
 
+import br.com.nhmdev.dao.IClienteDAO;
 import br.com.nhmdev.domain.Cliente;
 import br.com.nhmdev.exceptions.TipoChaveNaoEncontradaException;
 
@@ -14,14 +15,11 @@ public class ClienteDAOMock implements IClienteDAO {
 	}
 
 	@Override
-	public Boolean excluir(Long valor) {
-
-		return true;
+	public void excluir(Long valor) {
 	}
 
 	@Override
 	public void alterar(Cliente entity) throws TipoChaveNaoEncontradaException {
-
 	}
 
 	@Override

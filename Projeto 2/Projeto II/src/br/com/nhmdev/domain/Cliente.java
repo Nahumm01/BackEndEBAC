@@ -1,9 +1,11 @@
 package br.com.nhmdev.domain;
 
+import br.com.nhmdev.annotations.TipoChave;
 import br.com.nhmdev.dao.Persistente;
 
 public class Cliente implements Persistente {
 	String nome;
+	@TipoChave("getCpf")
 	Long cpf;
 	Long id;
 	String cidade;

@@ -1,7 +1,7 @@
 package br.com.nhmdev;
 
 import br.com.nhmdev.domain.Cliente;
-import br.com.nhmdev.dao.ClienteDAOMock;
+import br.com.nhmdev.mock.ClienteDAOMock;
 import br.com.nhmdev.exceptions.TipoChaveNaoEncontradaException;
 import br.com.nhmdev.dao.IClienteDAO;
 import org.junit.Assert;
@@ -44,8 +44,7 @@ public class ClienteDAOTest {
 
 	@Test
     public void excluirCliente(){
-        Boolean retorno = clienteDAO.excluir(cliente.getId());
-        Assert.assertTrue(retorno);
+		clienteDAO.excluir(cliente.getId());
     }
 
 	@Test
